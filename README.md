@@ -4,6 +4,7 @@ UCSD ECE Group 19 Project: Prediction and Analysis of Heart Failure
 ## Installation
 
 Requires:
+- conda
 - python 3.9.5
 - pandas
 - numpy
