@@ -1,0 +1,10 @@
+name: 143_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - notebook
+  - python=3.9.5
+  - numpy
+  - pandas
+prefix: /Users/rahulpolisetti/opt/miniconda3/envs/143_env
