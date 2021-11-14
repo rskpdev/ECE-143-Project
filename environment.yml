@@ -7,4 +7,7 @@ dependencies:
   - python=3.9.5
   - numpy
   - pandas
+  - seaborn
+  - toolz
+  - vaex
 prefix: /Users/rahulpolisetti/opt/miniconda3/envs/143_env
