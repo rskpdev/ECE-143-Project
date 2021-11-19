@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 
 def Logistic_Regression_Model(X_train, Y_train, X_test, Y_test):
-    model = LogisticRegression(solver='lbfgs', max_iter=1000)
+    model = LogisticRegression(solver='newton_cg')
     model.fit(X_train, Y_train)
     y_bar = model.predict(X_test)
     acc = accuracy_score(Y_test, y_bar)
@@ -60,7 +60,7 @@ def SVM_Model(X_train, Y_train, X_test, Y_test):
     return acc, confusion
 
 
-def KNN_Model(X_train, Y_train, X_test, Y_test, n):
+def KNN_Model(X_train, Y_train, X_test, Y_test, n=2):
     model = KNeighborsClassifier(n_neighbors=n)
     model.fit(X_train, Y_train)
     y_bar = model.predict(X_test)
