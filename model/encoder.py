@@ -1,34 +1,16 @@
 import pandas as pd
-from sklearn import preprocessing
 from sklearn.preprocessing import LabelEncoder
-from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import MinMaxScaler
 
 
-class MultiColumnEncoder:
-
-    def __init__(self, columns=None):
-        self.columns = columns  # array of column names to encode
-
-    def encode(self, X):
-        """
-        Encode the specified columns of X  in dataframe using
-        LabelEncoder(). If no columns specified, transforms all
-        columns in X.
-        """
-        encoded = X.copy()
-        if self.columns is not None:
-            for col in self.columns:
-                encoded[col] = LabelEncoder().fit_transform(encoded[col])
-        else:
-            for key, col in encoded.iteritems():
-                encoded[key] = LabelEncoder().fit_transform(col)
-        return encoded
-
-    def encoder(self, X):
-        return self.encode(X)
+def normalize(X_train, X_test):
+    scaler = MinMaxScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.fit_transform(X_test)
+    return X_train_scaled, X_test_scaled
 
 
-def df_encode(df, method, columns=None):
+def df_encode(df, method):
     """
     this is to encode the input dataframe for the columns that are not numerical
     :param df: input dataframe
@@ -40,4 +22,6 @@ def df_encode(df, method, columns=None):
         return pd.get_dummies(df)
 
     elif method == 'label_encoder':
-        return MultiColumnEncoder(columns=columns).encoder(df)
+        le = LabelEncoder()
+        df = df.apply(le.fit_transform)
+        return df
