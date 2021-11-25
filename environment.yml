@@ -10,4 +10,5 @@ dependencies:
   - seaborn
   - toolz
   - vaex
+  - cufflinks-py
 prefix: /Users/rahulpolisetti/opt/miniconda3/envs/143_env
