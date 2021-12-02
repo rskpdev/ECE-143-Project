@@ -131,7 +131,7 @@ def KNN_Model(X_train, Y_train, X_test, Y_test):
     return [acc_knn, pre_score_knn, rec_score_knn, f1_knn]
 
 
-def plot(X_train, Y_train, X_test, Y_test):
+def Run(X_train, Y_train, X_test, Y_test):
     import plotly.graph_objects as go
     fig = go.Figure()
     metrics = {'logistic_regression': Logistic_Regression_Model(X_train, Y_train, X_test, Y_test),
