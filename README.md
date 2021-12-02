@@ -28,3 +28,12 @@ Deactivate when done making changes
 ```
 conda deactivate
 ```
+
+## Usage
+
+The data we used is stored in [data](https://github.com/rskpdev/ECE-143-Project/tree/main/data) folder, and the Machine Learning model scripts are stored in [model](https://github.com/rskpdev/ECE-143-Project/tree/main/model) folder.
+
+### EDA
+
+EDA of the features from dataset are stored in the notebook in [notebooks](https://github.com/rskpdev/ECE-143-Project/tree/main/notebooks) folder.<br>
+View notebook here [jupyter nbviewer](https://nbviewer.jupyter.org/github/rskpdev/ECE-143-Project/blob/main/notebooks/ece143project.ipynb)
