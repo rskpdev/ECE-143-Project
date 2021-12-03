@@ -11,4 +11,6 @@ dependencies:
   - toolz
   - vaex
   - cufflinks-py
+  - plotly_express
+  - sklearn
 prefix: /Users/rahulpolisetti/opt/miniconda3/envs/143_env
