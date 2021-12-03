@@ -9,6 +9,9 @@ Requires:
 - pandas
 - numpy
 - jupyter notebook
+- sklearn
+- seaborn
+- plotly
 
 Clone the repository using
 ```
