@@ -46,11 +46,11 @@ View notebook here [jupyter nbviewer](https://nbviewer.jupyter.org/github/rskpde
 Machine Learning of the features from dataset are stored in the notebook in [notebooks](hhttps://github.com/rskpdev/ECE-143-Project/blob/main/model) folder.<br>
 View notebook here [jupyter nbviewer](https://github.com/rskpdev/ECE-143-Project/blob/main/model/prediction.ipynb)
 
-PCA.py 
+PCA.py<br/> 
 This file is used for performing PCA to extract the top 2 features for visualization.
-model.py 
+model.py<br/>
 This file consists of all the models used in prediction, plotting confusion matrix and calculating the metric scores.
-encoder.py 
+encoder.py<br/>
 this file encodes the categorical features in dataset.
-split_dataset.py 
+split_dataset.py<br/>
 This file splits the dataset into testing and training sets
