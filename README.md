@@ -9,6 +9,9 @@ Requires:
 - pandas
 - numpy
 - jupyter notebook
+- sklearn
+- seaborn
+- plotly
 
 Clone the repository using
 ```
@@ -40,5 +43,14 @@ View notebook here [jupyter nbviewer](https://nbviewer.jupyter.org/github/rskpde
 
 ### Machine Learning
 
-Machine Learning of the features from dataset are stored in the notebook in [notebooks](hhttps://github.com/rskpdev/ECE-143-Project/blob/main/model) folder.<br>
+Machine Learning of the features from dataset are stored in the notebook in [model](https://github.com/rskpdev/ECE-143-Project/tree/main/model) folder.<br>
 View notebook here [jupyter nbviewer](https://github.com/rskpdev/ECE-143-Project/blob/main/model/prediction.ipynb)
+
+- PCA.py<br/> 
+This file is used for performing PCA to extract the top 2 features for visualization.<br/>
+- model.py<br/>
+This file consists of all the models used in prediction, plotting confusion matrix and calculating the metric scores.<br/>
+- encoder.py<br/>
+this file encodes the categorical features in dataset.<br/>
+- split_dataset.py<br/>
+This file splits the dataset into testing and training sets<br/>
