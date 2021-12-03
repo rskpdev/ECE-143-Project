@@ -36,4 +36,4 @@ The data we used is stored in [data](https://github.com/rskpdev/ECE-143-Project/
 ### EDA
 
 EDA of the features from dataset are stored in the notebook in [notebooks](https://github.com/rskpdev/ECE-143-Project/tree/main/notebooks) folder.<br>
-View notebook here [jupyter nbviewer](https://github.com/rskpdev/ECE-143-Project/blob/main/notebooks/ece143project_final.ipynb)
+View notebook here [jupyter nbviewer](https://nbviewer.jupyter.org/github/rskpdev/ECE-143-Project/blob/main/notebooks/ece143project_final.ipynb)
